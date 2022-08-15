@@ -1,11 +1,24 @@
-const toBuy = ["pp","aaa"];
-toBuy.push("ccc");
-console.log(toBuy);
+const title = document.querySelector('#title');
 
-const player = {
-    name: "dgk",
-    age: "30",
-    fat: false
-};
-player.weight = 77;
-console.log(player);
+function htClick() {
+    title.style.color = 'red';
+}
+
+function htMouseEnter() {
+    title.innerHTML = "HI HI";
+}
+
+function htMouseLeave() {
+    title.innerHTML = "BYE BYE";
+}
+
+function htWindowResize() {
+    document.body.style.backgroundColor = "skyblue";
+}
+console.dir(title);
+console.dir(document.body);
+
+title.onclick = htClick ;
+title.addEventListener("mouseenter", htMouseEnter);
+title.addEventListener("mouseleave", htMouseLeave);
+window.addEventListener("resize", htWindowResize);
