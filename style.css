@@ -9,3 +9,7 @@ h1 {
 .active {
     color:brown;
 }
+
+.add-font {
+    font-family: 'Courier New', Courier, monospace;
+}
