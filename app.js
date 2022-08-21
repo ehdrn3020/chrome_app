@@ -1,16 +1,11 @@
-const title = document.querySelector('h1:first-child');
+const loginForm = document.querySelector("#login-form");
+const loginInput = loginForm.querySelector("input");
 
-function htClick() {
-    const clickedClass = 'active'
-    // if(title.classList.contains(clickedClass)){
-    //     title.classList.remove(clickedClass);
-    // }
-    // else {
-    //     title.classList.add(clickedClass);
-    // }
+function onLogSubmit(event) {
+    // submit event시 새로고침되는 기본 기능을 막기
+    event.preventDefault();
+    const username = loginInput.value;
+    console.log(username);
+}
 
-    // 위코드와 똑같은 기능
-    title.classList.toggle(clickedClass);
-} 
-
-title.addEventListener("click", htClick);
+loginForm.addEventListener("submit", onLogSubmit);
