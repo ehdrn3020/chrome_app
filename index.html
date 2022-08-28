@@ -8,29 +8,33 @@
     <title>Document</title>
 </head>
 <body>
-
-    <form class="hidden" id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?">
-        <input type="submit" value="Log In"/>
-    </form>
-
-    <h2 id="clock">00:00:00</h2>
-    <h1 class="hidden" id="greeting"></h1>
-
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To do and Press Endter">
-    </form>
-    <ul id="todo-list"></ul>
-
-    <div id="quote">
+    <section class="center">
+        <div>
+            <h2 class="clock">00:00:00</h2>
+        </div>
+        <div class="name">
+            <form class="hidden" id="login-form">
+                <input required maxlength="15" type="text" placeholder="What is your name?">
+                <input type="submit" value="Log In"/>
+            </form>
+            <h1 class="hidden" id="greeting"></h1>
+        </div>
+        <div>
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To do">
+            </form>
+            <ul class="list" id="todo-list"></ul>
+        </div>
+    </section>
+    <div class="location" id="quote">
         <span></span>
         <span></span>
-    </div>
+    </div>    
 
-    <script src="js/greeting.js"></script>
+    <script src="js/background.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js "></script>
-    <script src="js/todo.js "></script>
 </body>
 </html>
