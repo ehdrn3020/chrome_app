@@ -5,6 +5,6 @@ Chrome App
 - Login Form
 - ToDo List
 <div>
-  <img src="ChromeApp.png" width="450"/>
+  <img src="ChromeApp.png" width="700"/>
 </div>
 -
