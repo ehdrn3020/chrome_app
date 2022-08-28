@@ -1,6 +1,5 @@
-# 09.dgk flower blog
+# Chrome App
 
-Chrome App
 - Current Time
 - Login Form
 - ToDo List
